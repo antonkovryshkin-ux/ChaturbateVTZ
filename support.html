@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Chaturbate VTZ</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        :root {
+            --bg-color: #050505;
+            --card-bg: #111111;
+            --text-color: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --neon-cyan: #00F0FF;
+            --neon-pink: #D600FF;
+            --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header / Logo Area */
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #222;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #00F0FF;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--neon-pink);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 10px;
+            text-shadow: 0 0 10px rgba(214, 0, 255, 0.4);
+        }
+
+        /* Content Sections */
+        section {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid #222;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        section:hover {
+            border-color: #333;
+            box-shadow: 0 4px 30px rgba(0, 240, 255, 0.05);
+        }
+
+        h2 {
+            color: var(--neon-cyan);
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: '';
+            display: block;
+            width: 4px;
+            height: 24px;
+            background: var(--neon-pink);
+            margin-right: 12px;
+            border-radius: 2px;
+            box-shadow: 0 0 10px var(--neon-pink);
+        }
+
+        h3 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        p,
+        li {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: var(--neon-cyan);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--neon-cyan);
+            transition: all 0.3s;
+        }
+
+        a:hover {
+            color: white;
+            border-bottom-style: solid;
+            text-shadow: 0 0 8px var(--neon-cyan);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid #222;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        .glow-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: var(--neon-cyan);
+            border-radius: 50%;
+            margin: 0 10px;
+            box-shadow: 0 0 10px var(--neon-cyan);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            header {
+                margin-bottom: 30px;
+            }
+
+            h1 {
+                font-size: 2rem;
+                letter-spacing: 1px;
+            }
+
+            .subtitle {
+                font-size: 0.9rem;
+            }
+
+            section {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Support Center</h1>
+            <div class="subtitle">We're here to help</div>
+        </header>
+
+        <section>
+            <h2>Contact Us</h2>
+            <p>Have a question, bug report, or feature request? We would love to hear from you. Our support team is
+                available to assist you with any issues you might encounter.</p>
+            <p>Email: <a href="mailto:support@wbibi.com">support@wbibi.com</a></p>
+        </section>
+
+        <section>
+            <h2>Frequently Asked Questions</h2>
+
+            <h3>How do I add a new timezone?</h3>
+            <p>Navigate to the "Time Map" tab and tap the green "+" button (or search bar). Type the name of the city
+                you want to add and select it from the list.</p>
+
+            <h3>Is my data private?</h3>
+            <p>Yes. We do not require you to create an account. Your preferences are linked to your device using a
+                secure, anonymous identifier (IDFV). Check our <a href="privacy_policy.html">Privacy Policy</a> for more
+                details.</p>
+
+            <h3>How does the "Overlap Finder" work?</h3>
+            <p>The app analyzes the timezones you have selected and calculates the best time window where the overlap is
+                "Daytime" for the majority of the selected regions. This is perfect for scheduling global video calls.
+            </p>
+
+            <h3>The app is crashing, what should I do?</h3>
+            <p>Please ensure you are using the latest version of the app. If the problem persists, delete and reinstall
+                the app (your settings should be safe). If that doesn't work, contact us via email.</p>
+        </section>
+
+        <footer>
+            <p>&copy; <span id="year"></span> Chaturbate VTZ. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <span class="glow-dot" style="background: var(--neon-cyan);"></span>
+                <span class="glow-dot" style="background: var(--neon-pink);"></span>
+                <span class="glow-dot" style="background: var(--neon-cyan);"></span>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
