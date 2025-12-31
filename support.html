@@ -189,9 +189,94 @@
 
         <section>
             <h2>Contact Us</h2>
-            <p>Have a question, bug report, or feature request? We would love to hear from you. Our support team is
-                available to assist you with any issues you might encounter.</p>
-            <p>Email: <a href="mailto:support@wbibi.com">support@wbibi.com</a></p>
+            <p>Have a question or bug report? Send us a message directly.</p>
+
+            <!-- 
+                IMPORTANT: To make this form work and keep your email hidden:
+                1. Go to https://formspree.io/ (or https://formsubmit.co/)
+                2. Register your email (antonkovryshkin@gmail.com)
+                3. Get your unique Form ID/URL
+                4. Paste it in the 'action' attribute below.
+            -->
+            <form action="https://formsubmit.co/antonkovryshkin@gmail.com" method="POST"
+                style="display: flex; flex-direction: column; gap: 15px;">
+
+                <!-- Anti-spam honeypot (hidden) -->
+                <input type="text" name="_honey" style="display:none">
+                <!-- Disable Captcha for cleaner look (optional) -->
+                <input type="hidden" name="_captcha" value="false">
+                <!-- Success Page -->
+                <input type="hidden" name="_next" value="https://chaturbate-vtz.web.app/thanks.html">
+
+                <div>
+                    <label style="display: block; color: var(--text-muted); margin-bottom: 5px; font-size: 0.9rem;">Your
+                        Name</label>
+                    <input type="text" name="name" required style="
+                        width: 100%; 
+                        padding: 12px; 
+                        background: #000; 
+                        border: 1px solid #333; 
+                        color: white; 
+                        border-radius: 8px; 
+                        outline: none;
+                        transition: border-color 0.3s;
+                        box-sizing: border-box;
+                    " onfocus="this.style.borderColor='var(--neon-cyan)'" onblur="this.style.borderColor='#333'">
+                </div>
+
+                <div>
+                    <label style="display: block; color: var(--text-muted); margin-bottom: 5px; font-size: 0.9rem;">Your
+                        Email</label>
+                    <input type="email" name="email" required style="
+                        width: 100%; 
+                        padding: 12px; 
+                        background: #000; 
+                        border: 1px solid #333; 
+                        color: white; 
+                        border-radius: 8px; 
+                        outline: none;
+                        transition: border-color 0.3s;
+                        box-sizing: border-box;
+                    " onfocus="this.style.borderColor='var(--neon-cyan)'" onblur="this.style.borderColor='#333'">
+                </div>
+
+                <div>
+                    <label
+                        style="display: block; color: var(--text-muted); margin-bottom: 5px; font-size: 0.9rem;">Message</label>
+                    <textarea name="message" rows="5" required style="
+                        width: 100%; 
+                        padding: 12px; 
+                        background: #000; 
+                        border: 1px solid #333; 
+                        color: white; 
+                        border-radius: 8px; 
+                        outline: none;
+                        resize: vertical;
+                        transition: border-color 0.3s;
+                        box-sizing: border-box;
+                        font-family: inherit;
+                    " onfocus="this.style.borderColor='var(--neon-cyan)'"
+                        onblur="this.style.borderColor='#333'"></textarea>
+                </div>
+
+                <button type="submit" style="
+                    background: transparent;
+                    color: var(--neon-cyan);
+                    border: 1px solid var(--neon-cyan);
+                    padding: 12px 24px;
+                    border-radius: 8px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    transition: all 0.3s;
+                    align-self: flex-start;
+                    margin-top: 10px;
+                " onmouseover="this.style.background='var(--neon-cyan)'; this.style.color='black'; this.style.boxShadow='0 0 15px var(--neon-cyan)'"
+                    onmouseout="this.style.background='transparent'; this.style.color='var(--neon-cyan)'; this.style.boxShadow='none'">
+                    Send Message
+                </button>
+            </form>
         </section>
 
         <section>
