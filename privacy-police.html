@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,7 +69,7 @@
             padding: 30px;
             margin-bottom: 30px;
             border: 1px solid #222;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
@@ -97,7 +98,8 @@
             box-shadow: 0 0 10px var(--neon-pink);
         }
 
-        p, li {
+        p,
+        li {
             color: var(--text-muted);
             margin-bottom: 16px;
         }
@@ -142,9 +144,9 @@
             margin: 0 10px;
             box-shadow: 0 0 10px var(--neon-cyan);
         }
-
     </style>
 </head>
+
 <body>
 
     <div class="container">
@@ -156,7 +158,9 @@
         <section>
             <h2>Privacy Policy</h2>
             <p><strong>Last Updated:</strong> December 31, 2025</p>
-            <p>Welcome to Chaturbate VTZ. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you use our application and tell you about your privacy rights.</p>
+            <p>Welcome to Chaturbate VTZ. We respect your privacy and are committed to protecting your personal data.
+                This privacy policy will inform you as to how we look after your personal data when you use our
+                application and tell you about your privacy rights.</p>
         </section>
 
         <section>
@@ -164,9 +168,12 @@
             <p>We collect minimal data necessary to improve your experience and ensure the app functions correctly:</p>
             <ul>
                 <li><strong>Device Information:</strong> Device model, OS version, and language/region settings.</li>
-                <li><strong>Identifier for Vendor (IDFV):</strong> A unique identifier assigned to your device to store your preferences and settings securely without requiring a personal account.</li>
-                <li><strong>Timezone Data:</strong> Your current timezone and the timezones you choose to track within the app.</li>
-                <li><strong>Usage Data:</strong> Anonymous data regarding app performance and crash reports (via Firebase).</li>
+                <li><strong>Identifier for Vendor (IDFV):</strong> A unique identifier assigned to your device to store
+                    your preferences and settings securely without requiring a personal account.</li>
+                <li><strong>Timezone Data:</strong> Your current timezone and the timezones you choose to track within
+                    the app.</li>
+                <li><strong>Usage Data:</strong> Anonymous data regarding app performance and crash reports (via
+                    Firebase).</li>
             </ul>
         </section>
 
@@ -174,9 +181,12 @@
             <h2>2. How We Use Your Information</h2>
             <p>We use the collected data for the following purposes:</p>
             <ul>
-                <li><strong>Core Functionality:</strong> To synchronization your saved timezones across potential future updates.</li>
-                <li><strong>Personalization:</strong> To verify your region for "Smart Overlap" suggestions (Prime Time calculations).</li>
-                <li><strong>Analytics:</strong> To understand user demographics (country, device type) and improve app stability.</li>
+                <li><strong>Core Functionality:</strong> To synchronization your saved timezones across potential future
+                    updates.</li>
+                <li><strong>Personalization:</strong> To verify your region for "Smart Overlap" suggestions (Prime Time
+                    calculations).</li>
+                <li><strong>Analytics:</strong> To understand user demographics (country, device type) and improve app
+                    stability.</li>
             </ul>
         </section>
 
@@ -184,15 +194,19 @@
             <h2>3. Third-Party Services</h2>
             <p>We use trusted third-party services to securely handle data:</p>
             <ul>
-                <li><strong>Google Firebase (Firestore):</strong> Used for secure cloud storage of your preferences and IDFV.</li>
-                <li><strong>Google Firebase (Remote Config):</strong> Used to keep app policies and features up to date without app store updates.</li>
+                <li><strong>Google Firebase (Firestore):</strong> Used for secure cloud storage of your preferences and
+                    IDFV.</li>
+                <li><strong>Google Firebase (Remote Config):</strong> Used to keep app policies and features up to date
+                    without app store updates.</li>
             </ul>
             <p>These services adhere to strict security standards (GDPR & CCPA compliant).</p>
         </section>
 
         <section>
             <h2>4. Data Security</h2>
-            <p>We implement appropriate security measures to prevent your personal data from being accidentally lost, used, or accessed in an unauthorized way. We do not sell or trade your personal data to third parties.</p>
+            <p>We implement appropriate security measures to prevent your personal data from being accidentally lost,
+                used, or accessed in an unauthorized way. We do not sell or trade your personal data to third parties.
+            </p>
         </section>
 
         <section>
@@ -202,7 +216,7 @@
         </section>
 
         <footer>
-            <p>&copy; 2025 Chaturbate VTZ. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> Chaturbate VTZ. All rights reserved.</p>
             <p style="margin-top: 10px;">
                 <span class="glow-dot" style="background: var(--neon-cyan);"></span>
                 <span class="glow-dot" style="background: var(--neon-pink);"></span>
@@ -211,5 +225,10 @@
         </footer>
     </div>
 
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
 </body>
+
 </html>
